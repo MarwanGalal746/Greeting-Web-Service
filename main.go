@@ -26,5 +26,5 @@ func main() {
 	// Start the server
 	handlers.Start(portNum)
 
-	//todo : 1-add tests. 2-logging. 3-documentation
+	//todo : 1-documentation
 }

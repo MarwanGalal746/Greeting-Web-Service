@@ -10,7 +10,7 @@ import (
 )
 
 type HelloHandler struct {
-	helloService services.HelloService
+	helloService services.GreetingService
 }
 
 func (h *HelloHandler) Greet(c *gin.Context) {
@@ -29,6 +29,6 @@ func (h *HelloHandler) Greet(c *gin.Context) {
 	json.NewEncoder(c.Writer).Encode(greetingMessage)
 }
 
-func NewHelloHandler(service services.HelloService) GreetingHandler {
+func NewHelloHandler(service services.GreetingService) GreetingHandler {
 	return &HelloHandler{helloService: service}
 }

@@ -10,7 +10,7 @@ import (
 func Start(port string) {
 	router := gin.Default()
 
-	helloGreetingHandler := NewHelloHandler(services.HelloService{})
+	helloGreetingHandler := NewHelloHandler(&services.HelloService{})
 
 	//endpoint
 	router.POST("/greet", helloGreetingHandler.Greet)
