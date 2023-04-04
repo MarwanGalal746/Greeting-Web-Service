@@ -9,14 +9,15 @@ import (
 var portNum string
 
 func init() {
+
 	// Set up logging
 	logging.Logging()
 
-	// Set up port
-	portNum = utils.GetPort()
-
 	//handle kill signals
 	utils.HandleKillSignals()
+
+	// Set up port
+	portNum = utils.GetPort()
 
 }
 
@@ -25,5 +26,5 @@ func main() {
 	// Start the server
 	handlers.Start(portNum)
 
-	//todo: 1-add tests. 2-logging. 3-documentation
+	//todo : 1-add tests. 2-logging. 3-documentation
 }
