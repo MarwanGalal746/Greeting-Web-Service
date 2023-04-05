@@ -9,8 +9,9 @@
 - [**Getting started**](#getting-started)
 - [**Prerequisites**](#prerequisites)
 - [**Packages**](#packages)
-- [**Environment variables file**](environment-variables-file)
+- [**Features**](#features)
 - [**Running**](#running)
+- [**Logs**](#logs)
 - [**Postman collection**](#postman-collection)
 
 ---
@@ -89,9 +90,13 @@ You can specify port number by passing it as an argument:
 go run main.go --port=9999 #application will run on port 9999
 ```
 
+## Logs
+
+After running the server, **logs.txt** file will be created in the root directory of the project. It will contain the logs.
+
 ## Postman collection
 
-you will find the postman collection [here](postman%20collection/exam%20service.postman_collection.json).
+you will find the postman collection [here](postman%20collection/greeting.postman_collection.json).
 
 You can get what is the right structure of JSON file to send requests and receiving responses from the postman
 collection after importing it in the [Postman](https://www.postman.com/).
