@@ -4,7 +4,6 @@ import (
 	"Greeting-web-service/pkg/errs"
 	"Greeting-web-service/pkg/models"
 	"Greeting-web-service/pkg/services"
-	"encoding/json"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -25,8 +24,7 @@ func (h *HelloHandler) Greet(c *gin.Context) {
 		return
 	}
 
-	c.Writer.WriteHeader(http.StatusOK)
-	json.NewEncoder(c.Writer).Encode(greetingMessage)
+	c.JSON(http.StatusOK, greetingMessage)
 }
 
 func NewHelloHandler(service services.GreetingService) GreetingHandler {

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"Greeting-web-service/pkg/handlers"
 	"Greeting-web-service/pkg/logging"
+	"Greeting-web-service/pkg/server"
 	"Greeting-web-service/pkg/utils"
 )
 
@@ -24,7 +24,6 @@ func init() {
 func main() {
 	//get the port
 	// Start the server
-	handlers.Start(portNum)
+	server.Start(portNum)
 
-	//todo : 1-documentation
 }
