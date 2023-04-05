@@ -9,7 +9,9 @@
 - [**Getting started**](#getting-started)
 - [**Prerequisites**](#prerequisites)
 - [**Packages**](#packages)
+- [**Tools**](#tools)
 - [**Features**](#features)
+- [**UML Diagram**](#uml-diagram)
 - [**Running**](#running)
 - [**Logs**](#logs)
 - [**Postman collection**](#postman-collection)
@@ -19,7 +21,7 @@
 ## Summary
 
 Simple web service responding to requests with a greeting message. The service is written
-in [Golang](https://golang.org/dl/).
+in [Golang](https://go.dev/).
 
 ## Getting Started
 
@@ -28,14 +30,18 @@ Follow the instructions to complete the installation.
 
 ## Prerequisites
 
-- [Golang](https://golang.org/dl/)
-- [Postman](https://www.postman.com/) (optional)
+- [Golang 1.19.3v](https://pkg.go.dev/golang.org/dl/go1.19.3)
 
 ## Packages
 
 - [Gin](https://github.com/gin-gonic/gin)
 - [Validator](https://github.com/go-playground/validator)
 - [Testify](https://github.com/stretchr/testify)
+
+## Tools
+- [Goland](https://www.jetbrains.com/go/)
+- [Postman](https://www.postman.com/)
+- [Draw.io](https://app.diagrams.net/)
 
 ## Features
 
@@ -71,6 +77,11 @@ and it parses the JSON request and upon success respond with HTTP status 200 OK 
 - The webservice responses with HTTP status 404 (Not Found) on any URL other than /greet.
 - The service handles SIGINT or SIGTERM signals (kill command on Linux or Ctrl+C on both Windows and Linux) and exit
   gracefully.
+
+## UML Diagram
+
+![UML Diagram](UML/greeting-service.png)
+
 
 ## Running
 
