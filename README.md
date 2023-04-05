@@ -57,7 +57,7 @@ go run main.go  #application will run on port 8080
 
 ```json
 {
-  “name”: “Sherif”
+  "name" : "Sherif"
 }
 ```
 
@@ -65,7 +65,7 @@ and it parses the JSON request and upon success respond with HTTP status 200 OK 
 
 ```json
 {
-  “message”: “Hello Sherif!”
+  "message": "Hello Sherif!"
 }
 ```
 
